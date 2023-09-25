@@ -156,3 +156,24 @@ footer {
     }
   }
 }
+
+/* sections */
+.section-list {
+  padding: 0;
+  > li {
+    list-style: none;
+
+    > span {
+      display: block;
+      font-style: italic;
+      color: var(--text-soft-color);
+    }
+    > a {
+      font-size: xx-large;
+    }
+  }
+
+  > li:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
