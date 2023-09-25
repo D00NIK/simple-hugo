@@ -149,6 +149,7 @@ footer {
       display: inline;
       width: calc(var(--footer-height) / 2);
       height: calc(var(--footer-height) / 2);
+      margin-left: 20px;
 
       > a > svg {
         fill: var(--svg-color);
