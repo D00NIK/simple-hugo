@@ -1,6 +1,6 @@
 <footer>
   <div class="footer-container">
-    <span class="footer-text">{{ .Site.Params.FooterText }}</span>
+    <span class="footer-text">{{ .Site.Params.FooterText | safeHTML }}</span>
     <ul class="footer-socials">
       {{ range.Site.Menus.Footer }}
       <li>
