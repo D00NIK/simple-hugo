@@ -14,7 +14,7 @@ echo "theme = 'simple-hugo'" >> my-site/hugo.toml # change for other formats
 ## Configuration (`hugo.toml`)
 
 ### Website title
-Just change the title.
+Just change the `title`.
 ```toml
 title = 'My New Hugo Site'
 ```
@@ -36,7 +36,7 @@ Add it with Menus like below. Weight determines the order.
 ```
 
 ### Footer socials
-Same as above but with `footer` menu. Do **not** erase name, it is required by Hugo. Don't forget the logo in `static` folder.
+Same as above but with `footer` menu. Do **not** erase the name, it is required by Hugo. Don't forget the logo in `static` folder.
 
 ```toml
 [menu]
