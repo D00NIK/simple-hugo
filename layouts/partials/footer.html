@@ -2,8 +2,8 @@
   <div class="footer-container">
     <span class="footer-text">{{ .Site.Params.FooterText }}</span>
     <ul class="footer-socials">
-      {{ range.Site.Menus.socials }}
-      <li><a href="{{ .URL }}">{{ readFile .Pre | safeHTML }}</a></li>
+      {{ range.Site.Menus.Footer }}
+      <li><a href="{{ .URL }}">{{ readFile .Params.Path | safeHTML }}</a></li>
       {{ end }}
     </ul>
   </div>
