@@ -2,7 +2,7 @@
   <div class="footer-container">
     <span class="footer-text">{{ .Site.Params.FooterText | safeHTML }}</span>
     <ul class="footer-socials">
-      {{ range.Site.Menus.Footer }}
+      {{ range .Site.Menus.footer }}
       <li>
         <a href="{{ .URL }}" target="_blank" rel="noopener noreferrer"
           >{{ readFile .Params.Path | safeHTML }}</a
