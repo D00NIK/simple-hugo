@@ -25,6 +25,8 @@
   }
 }
 
+/* defaults */
+
 body {
   font: 1.2rem/1.62 sans-serif;
   background-color: var(--bg-color);
@@ -40,6 +42,10 @@ body {
 
 a {
   text-decoration: underline;
+}
+
+svg {
+  color: var(--svg-color);
 }
 
 /* header */
@@ -145,15 +151,12 @@ footer {
   .footer-socials {
     list-style: none;
     display: flex;
+
     > li {
       display: inline;
       width: calc(var(--footer-height) / 2);
       height: calc(var(--footer-height) / 2);
       margin-left: 20px;
-
-      > a > svg {
-        fill: var(--svg-color);
-      }
     }
   }
 }
@@ -161,6 +164,7 @@ footer {
 /* sections */
 .section-list {
   padding: 0;
+
   > li {
     list-style: none;
 
