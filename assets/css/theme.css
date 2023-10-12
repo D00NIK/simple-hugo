@@ -112,7 +112,7 @@ header {
 main {
   max-width: var(--content-width);
   margin: 0 auto;
-  padding: 32px var(--sides-width) var(--footer-height);
+  padding: 32px var(--sides-width) calc(var(--footer-height) + 32px);
 
   .title-container {
     margin-bottom: 30px;
