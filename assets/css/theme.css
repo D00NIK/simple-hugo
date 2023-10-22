@@ -45,7 +45,7 @@ a {
 }
 
 svg {
-  color: var(--svg-color);
+  fill: var(--svg-color);
 }
 
 /* header */
