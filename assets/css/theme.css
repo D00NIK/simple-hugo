@@ -36,7 +36,7 @@ body {
   min-height: 100vh;
 }
 
-a, p, h1, h2, h3, h4, h5, h6, ul, li, figcaption, span {
+a, p, h1, h2, h3, h4, h5, h6, ul, li, figcaption {
   color: var(--text-color);
 }
 
@@ -158,6 +158,10 @@ footer {
       height: calc(var(--footer-height) / 2);
       margin-left: 20px;
     }
+  }
+
+  .footer-text {
+    color: var(--text-color);
   }
 }
 
