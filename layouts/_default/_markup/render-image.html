@@ -1,8 +1,9 @@
 {{ $src := .Page.Resources.GetMatch (.Destination | safeURL) }}
 
 <figure>
-    {{ $img := $src.Fit (printf "%dx%d webp q90" 1024 $src.Height) }}
-    {{ $placeholder := $src.Fit "30x30 webp"}}
+  {{ $img := $src.Fit (printf "%dx%d webp q90" 1024 $src.Height) }}
+  {{ $placeholder := $src.Fit "30x30 webp"}}
+  <a href="{{ $img.RelPermalink}}" target="_blank" rel="noopener noreferrer">
     <img
       src="{{$img.RelPermalink}}" 
       alt="{{ .Text }}" 
@@ -14,5 +15,6 @@
         background-image: url('{{$placeholder.RelPermalink}}');
         background-size: cover;"
     >
+  </a>
     {{ with .Title }}<figcaption>{{ . | markdownify }}</figcaption>{{ end }}
 </figure>
